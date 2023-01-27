@@ -91,7 +91,6 @@ def simple_decorator_3(*decorator_args, **decorator_kwargs):
     # there is a function to be 'decorated'
 
     def decorator(f):
-
         def wrapper(*function_args, **function_kwargs):
             # Do something
             print('[Decorator] Positional Arguments: ', decorator_args)
@@ -136,6 +135,84 @@ def example_3():
 
 
 ########################################################################################################################
+#                                                EXAMPLE 4
+########################################################################################################################
+def simple_decorator_4_1(*decorator_args, **decorator_kwargs):
+    # there is a function to be 'decorated'
+
+    def decorator(f):
+        def wrapper(*function_args, **function_kwargs):
+            # Do something
+            print('[Decorator (4_1) ] Positional Arguments: ', decorator_args)
+            print('[Decorator (4_1) ] Keyword Arguments: ', decorator_kwargs)
+
+            print('[Decorator (4_1) ] Function: ', f)
+
+            print('[Wrapper (4_1) ] Positional Arguments: ', function_args)
+            print('[Wrapper (4_1) ] Keyword Arguments: ', function_kwargs)
+
+            # Run the function
+            function_result = f(*function_args, **function_kwargs)
+
+            # Do something on result
+            function_result += 0
+
+            return function_result
+
+        return wrapper
+
+    return decorator
+
+
+def simple_decorator_4_2(*decorator_args, **decorator_kwargs):
+    # there is a function to be 'decorated'
+
+    def decorator(f):
+        def wrapper(*function_args, **function_kwargs):
+            # Do something
+            print('[Decorator (4_2) ] Positional Arguments: ', decorator_args)
+            print('[Decorator (4_2)] Keyword Arguments: ', decorator_kwargs)
+
+            print('[Decorator (4_2)] Function: ', f)
+
+            print('[Wrapper (4_2) ] Positional Arguments: ', function_args)
+            print('[Wrapper (4_2) ] Keyword Arguments: ', function_kwargs)
+
+            # Run the function
+            function_result = f(*function_args, **function_kwargs)
+
+            # Do something on result
+            function_result += 0
+
+            return function_result
+
+        return wrapper
+
+    return decorator
+
+
+@simple_decorator_4_2('DECORATOR_4_2_ARG_1', 'DECORATOR_4_2_ARG_2')
+@simple_decorator_4_1('DECORATOR_4_1_ARG_1', 'DECORATOR_4_1_ARG_2')
+def simple_add_function_4(a: int, b: int) -> int:
+    # simple_decorator(simple_add_function)
+    # wrapper       ->  (a, b)
+    return a + b
+
+
+def example_4():
+    int_a = 10
+    int_b = 20
+
+    print('Using positional arguments')
+    result = simple_add_function_4(int_a, int_b)
+    print('Final result: ', result, '\n')
+
+    print('Using Keyword arguments')
+    result = simple_add_function_4(a=int_a, b=int_b)
+    print('Final result: ', result, '\n')
+
+
+########################################################################################################################
 #                                                MAIN
 ########################################################################################################################
 
@@ -161,7 +238,7 @@ def print_message(*args, **kwargs):
 
 
 if __name__ == "__main__":
-    list_of_example_functions = [example_1, example_2, example_3]
+    list_of_example_functions = [example_1, example_2, example_3, example_4]
 
     for idx, function_name in enumerate(list_of_example_functions):
         print_message(f'\t\t\tExample {idx + 1}')
