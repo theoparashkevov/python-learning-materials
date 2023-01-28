@@ -1,7 +1,7 @@
 from __future__ import annotations
+
 from collections.abc import Iterable, Iterator
 from typing import Any, List
-
 
 """
 To create an iterator in Python, there are two abstract classes from the built-
