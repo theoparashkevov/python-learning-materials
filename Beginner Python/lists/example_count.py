@@ -27,3 +27,11 @@ print("Amount of c's in the list: ", count_cs)
 
 count_Zs = example_list.count('Z')
 print("Amount of c's in the list: ", count_cs)
+
+# Cannot count type of variable here like this
+count_ints = example_list.count(int)
+print("Amount of int's in the list: ", count_ints)
+
+# Cannot count type of variable here like this
+count_type_ints = example_list.count(type(int))
+print("Amount of type int's in the list: ", count_type_ints)
