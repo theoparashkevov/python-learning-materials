@@ -39,6 +39,7 @@ Overall, using design patterns requires a good understanding of the problem you 
 5. Singleton - ensures that a class has only one instance, and provides a global point of access to it
 
 ## Structural Patterns
+
 1. Adapter - converts the interface of a class into another interface that clients expect
 
 2. Bridge - decouples an abstraction from its implementation so that the two can vary independently
@@ -80,3 +81,36 @@ Overall, using design patterns requires a good understanding of the problem you 
 
 
 These patterns can be applied in various programming languages and frameworks to solve different types of problems. It is important to note that not all of these patterns will be applicable in every situation, and choosing the appropriate pattern requires careful consideration of the problem at hand.
+
+# Not so common Design Patterns
+
+It is also worth mentioning that there are several other design patterns that are not as widely recognized as the 23 patterns mentioned above, but are still useful in certain situations. Some of these lesser-known design patterns include:
+
+## Creational Patterns
+
+1. Dependency Injection - allows objects to be created and their dependencies to be injected at runtime
+
+2. Object Pool - creates a pool of reusable objects that can be shared among clients
+
+3. Lazy Initialization - defers the creation of an object until it is actually needed
+
+
+## Structural Patterns
+1. Private Class Data - restricts access to an object's data by making it private and providing access through public methods
+
+2. Proxy - provides a way to control access to an object without exposing its implementation details
+
+3. Module - organizes code into self-contained units that can be easily reused and tested
+
+## Behavioral Patterns
+
+1. Chain of Command - decouples the sender of a request from its receiver by allowing multiple objects to handle the request
+
+2. Null Object - provides a default implementation for an interface that does nothing, allowing the client code to handle null values gracefully
+
+3. Servant - allows clients to access a group of related objects through a single interface
+
+4. Specification - separates the specification of business rules from their implementation, allowing the rules to be easily changed or extended
+
+
+As with the more well-known design patterns, the key to using these patterns effectively is to understand the problem you are trying to solve and to choose the pattern that best fits that problem. By using design patterns, you can build software systems that are more maintainable, reusable, and scalable, and that are better able to meet the needs of your users.
