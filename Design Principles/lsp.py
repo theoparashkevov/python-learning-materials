@@ -17,29 +17,29 @@ or a Square object is passed to the print_area() function.
 
 
 class Shape:
-	def area(self):
-		pass
+    def area(self):
+        pass
 
 
 class Rectangle(Shape):
-	def __init__(self, width, height):
-		self.width = width
-		self.height = height
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-	def area(self):
-		return self.width * self.height
+    def area(self):
+        return self.width * self.height
 
 
 class Square(Rectangle):
-	def __init__(self, side_length):
-		super().__init__(side_length, side_length)
+    def __init__(self, side_length):
+        super().__init__(side_length, side_length)
 
-	def area(self):
-		return super().area()
+    def area(self):
+        return super().area()
 
 
 def print_area(shape):
-	print(shape.area())
+    print(shape.area())
 
 
 # create a rectangle object and calculate its area

@@ -19,18 +19,18 @@ NotificationService class, making them decoupled and reusable in other contexts.
 
 
 class NotificationService:
-	def __init__(self, notifier):
-		self.notifier = notifier
+    def __init__(self, notifier):
+        self.notifier = notifier
 
-	def send_notification(self, message):
-		self.notifier.send(message)
+    def send_notification(self, message):
+        self.notifier.send(message)
 
 
 class EmailNotifier:
-	def send(self, message):
-		print(f"Sending email notification: {message}")
+    def send(self, message):
+        print(f"Sending email notification: {message}")
 
 
 class SMSNotifier:
-	def send(self, message):
-		print(f"Sending SMS notification: {message}")
+    def send(self, message):
+        print(f"Sending SMS notification: {message}")

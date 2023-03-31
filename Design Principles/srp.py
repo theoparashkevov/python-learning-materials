@@ -20,17 +20,17 @@ system easier to maintain and change in the future.
 
 
 class Employee:
-	def __init__(self, name, title, salary):
-		self.name = name
-		self.title = title
-		self.salary = salary
+    def __init__(self, name, title, salary):
+        self.name = name
+        self.title = title
+        self.salary = salary
 
-	def get_salary(self):
-		return self.salary
+    def get_salary(self):
+        return self.salary
 
 
 class Payroll:
-	def calculate_payroll(self, employees):
-		print("Calculating payroll")
-		for employee in employees:
-			print(f"Payroll for {employee.name} - {employee.get_salary()}")
+    def calculate_payroll(self, employees):
+        print("Calculating payroll")
+        for employee in employees:
+            print(f"Payroll for {employee.name} - {employee.get_salary()}")

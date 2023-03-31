@@ -16,32 +16,32 @@ We can then create a Triangle object and add it to the shapes list without modif
 
 
 class Shape:
-	def area(self):
-		pass
+    def area(self):
+        pass
 
 
 class Rectangle(Shape):
-	def __init__(self, width, height):
-		self.width = width
-		self.height = height
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
 
-	def area(self):
-		return self.width * self.height
+    def area(self):
+        return self.width * self.height
 
 
 class Circle(Shape):
-	def __init__(self, radius):
-		self.radius = radius
+    def __init__(self, radius):
+        self.radius = radius
 
-	def area(self):
-		return 3.14 * self.radius ** 2
+    def area(self):
+        return 3.14 * self.radius ** 2
 
 
 def calculate_area(shapes):
-	total_area = 0
-	for shape in shapes:
-		total_area += shape.area()
-	return total_area
+    total_area = 0
+    for shape in shapes:
+        total_area += shape.area()
+    return total_area
 
 
 # create a rectangle and a circle
@@ -56,12 +56,12 @@ print(total_area)  # Output: 84.5
 
 
 class Triangle(Shape):
-	def __init__(self, base, height):
-		self.base = base
-		self.height = height
+    def __init__(self, base, height):
+        self.base = base
+        self.height = height
 
-	def area(self):
-		return 0.5 * self.base * self.height
+    def area(self):
+        return 0.5 * self.base * self.height
 
 t = Triangle(4, 2)
 shapes.append(t)
