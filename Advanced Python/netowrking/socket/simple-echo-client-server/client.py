@@ -2,6 +2,7 @@ import os
 import sys
 import socket
 import time
+from datetime import datetime
 
 HOST = '127.0.0.1'
 PORT = 6558
@@ -14,23 +15,32 @@ class Client():
 		self.socket = self.__initialize_socket()
 
 	def __initialize_socket(self):
+		print(f'[{datetime.now()}][Client] : Initializing SOCKET...')
 		return_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		print(f'[{datetime.now()}][Client] : Initialized successfully')
+
+		print(f'[{datetime.now()}][Client] : Connecting to {(self.__server_host, self.__server_port)} ...')
 		return_socket.connect((self.__server_host, self.__server_port))
+		print(f'[{datetime.now()}][Client] : Connected successfully to {(self.__server_host, self.__server_port)}')
 
 		return return_socket
 
 	def send_data(self, data:str):
+		print(f'[{datetime.now()}][Client] : sending data => {data}')
 		self.socket.sendall(data.encode('utf-8'))
+		print(f'[{datetime.now()}][Client] : data sent successfully')
 
 	def receive_data(self, size:int):
 		data = self.socket.recv(size)
-		print(f"Received: {data.decode('utf-8')}")
+		decoded_data = data.decode('utf-8')
+		print(f'[{datetime.now()}][Client] : data received from the server successfully => {decoded_data}')
 		return data
 
 
 client = Client(HOST, PORT)
 while True:
-	data_to_send = input('What should I send to the server ? ')
+	print('---------------------------------------------')
+	data_to_send = input('\n[Client]\tWhat should I send to the server ? : ')
 
 	if data_to_send == 'terminate':
 		client.send_data(data_to_send)
