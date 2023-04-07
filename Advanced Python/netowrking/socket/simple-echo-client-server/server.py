@@ -2,6 +2,7 @@ import os
 import sys
 import socket
 import time
+from datetime import datetime
 
 HOST = '127.0.0.1'
 PORT = 6558
@@ -16,26 +17,27 @@ class Server():
 
 		connection, address = self.socket.accept()
 		with connection:
-			print(f"Connected by {address}")
+			print(f'[{datetime.now()}][Server] : Connected by {address}')
 
 			while True:
 				data = connection.recv(1024)
 				decoded_data = data.decode('utf-8')
-				print(f"Received: {decoded_data}")
+				print(f'[{datetime.now()}][Server] : Received data => {decoded_data}')
 
 				if decoded_data == 'terminate':
-					print('Terminating...')
+					print(f'[{datetime.now()}][Server] : Terminating...')
 					break
 
 				connection.sendall(data)
 
 	def __initialize_socket(self):
-		print('Initializing socket...')
+		print(f'[{datetime.now()}][Server] : Initializing SOCKET...')
 		return_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+		print(f'[{datetime.now()}][Server] : Initialized successfully')
 
-
+		print(f'[{datetime.now()}][Server] : Binding to {(self.__host, self.__port)} ... ')
 		return_socket.bind((self.__host, self.__port))
-		print(f'Socket successfully bound to {self.__host}:{self.__port}')
+		print(f'[{datetime.now()}][Server] : Bound successfully  to {(self.__host, self.__port)}')
 
 		return return_socket
 
