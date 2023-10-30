@@ -1,5 +1,7 @@
 # Where things are
 theme               : minima
+  skin: dark
+  
 source              : .
 destination         : ./_site
 collections_dir     : .
