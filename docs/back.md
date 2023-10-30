@@ -1,8 +1,8 @@
 ---
-title: Back
 layout: page
+title: Back
 permalink: /back/
 ---
 
 
-[Teo Parashkevov] (teoparashkevov.github.io)
+[Teo Parashkevov](https://theoparashkevov.github.io)
