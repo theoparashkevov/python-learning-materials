@@ -73,6 +73,8 @@ kramdown:
 
 minima:
   skin: dark
+  social_links:
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
 
 header_pages:
   - data-structures.md
