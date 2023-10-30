@@ -70,3 +70,7 @@ kramdown:
   hard_wrap         : false
   footnote_nr       : 1
   show_warnings     : false
+
+header_pages:
+  - /data_structures/data-structures.md
+  - index.md
