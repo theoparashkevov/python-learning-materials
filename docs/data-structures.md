@@ -10,4 +10,4 @@ layout: page
 ---
 iNDEX md For Data structures
 
-[Stack post](./stack/Stack_Python.md)
+[Stack post](./data_structures/stack/Stack_Python.md)
