@@ -1,5 +1,5 @@
 # Where things are
-theme               : hacker
+theme               : minima
 source              : .
 destination         : ./_site
 collections_dir     : .
