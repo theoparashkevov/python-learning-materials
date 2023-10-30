@@ -43,7 +43,7 @@ incremental         : false
 detach              : false
 port                : 4000
 host                : 127.0.0.1
-baseurl             : "" # does not include hostname
+baseurl             : "python-learning-materials" # does not include hostname
 show_dir_listing    : false
 
 # Outputting
