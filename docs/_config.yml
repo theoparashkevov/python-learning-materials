@@ -1,6 +1,6 @@
 # Where things are
 theme               : minima
-source              : .
+source              : ./_site
 destination         : ./_site
 collections_dir     : .
 plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
