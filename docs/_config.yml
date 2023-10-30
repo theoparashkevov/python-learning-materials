@@ -72,5 +72,5 @@ kramdown:
   show_warnings     : false
 
 header_pages:
-  - /data_structures/data-structures.md
+  - data-structures.md
   - index.md
