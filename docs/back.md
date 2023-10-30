@@ -1,4 +1,8 @@
 ---
 title: Back
-url: theoparashkevov.github.io
+layout: page
+permalink: /back/
 ---
+
+
+[Teo Parashkevov] (teoparashkevov.github.io)
