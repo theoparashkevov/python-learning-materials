@@ -1,19 +1,7 @@
 ---
 title: stack-post
-
+permalink: /data-structures/stack
 ---
-
-```python
-%load_ext jupyter_ai
-```
-
-
-
-```python
-%%ai chatgpt 
-List the avantages and disadvantages of Linked stack
-```
-
 
 ```python
 from random import randint
@@ -114,9 +102,3 @@ A linked stack, also referred to as a linked list-based stack, is a type of stac
 - <span style="color: rgb(245, 66, 81);">  __Extra memory overhead__ </span>
 - <span style="color: rgb(245, 66, 81);">  __Potential for memory fragmentation__ </span>
 
-
-
-
-```python
-
-```

@@ -1,6 +1,6 @@
 ---
 title: Data Structures
-
+permalink: /data-structures
 ---
 
 # (T) Data Strutures
