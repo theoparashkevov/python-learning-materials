@@ -1,5 +1,5 @@
 # Where things are
-theme               : minima
+theme               : hacker
 source              : .
 destination         : ./_site
 collections_dir     : .
@@ -49,7 +49,7 @@ show_dir_listing    : false
 # Outputting
 permalink           : date
 paginate_path       : /page:num
-timezone            : null
+timezone            : Europe/Sofia
 
 quiet               : false
 verbose             : false
