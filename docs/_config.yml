@@ -79,6 +79,10 @@ minima:
     - { platform: linkedin,       user_url: "https://www.linkedin.com/in/teo-parashkevov/" }
     - { platform: youtube,        user_url: "https://www.youtube.com/channel/UCe0mtJP7Pl7JmLG8kDQma-g" }
 
+description: >
+  Check out the repository at [Python Learning Materials](https://github.com/theoparashkevov/python-learning-materials)
+
+
 header_pages:
   - data-structures.md
   - back.md
