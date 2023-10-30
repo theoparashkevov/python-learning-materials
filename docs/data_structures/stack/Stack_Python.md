@@ -1,10 +1,12 @@
+---
+title: stack-post
+
+---
+
 ```python
 %load_ext jupyter_ai
 ```
----
-title: stack
 
----
 
 
 ```python
