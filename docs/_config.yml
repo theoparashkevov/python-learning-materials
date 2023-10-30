@@ -71,6 +71,9 @@ kramdown:
   footnote_nr       : 1
   show_warnings     : false
 
+minima:
+  skin: dark
+
 header_pages:
   - data-structures.md
   - index.md
