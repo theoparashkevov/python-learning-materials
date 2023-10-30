@@ -2,4 +2,4 @@
 
 ---
 
-- [Stack]({% link ./_site/data_structures/stack/stack.md %})
+- [Stack](./_site/data_structures/stack/stack.md)
