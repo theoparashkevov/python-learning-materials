@@ -1,5 +1,4 @@
-# Index Stack
+# Data Strutures
 
 ---
-
-hehehehhe
+iNDEX md For Data structures
