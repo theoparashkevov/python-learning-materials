@@ -1,6 +1,7 @@
 ---
 title: Data Structures
 permalink: /data-structures
+categories: [data-structures]
 layout: page
 ---
 
