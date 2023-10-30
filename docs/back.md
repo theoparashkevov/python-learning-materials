@@ -13,7 +13,7 @@ permalink: /back/
         padding: 20px;
         width: 300px;
         margin: 50px auto;
-        background: #f9f9f9;
+        background: #f9f9f942;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
 
@@ -28,22 +28,22 @@ permalink: /back/
         text-align: center;
         margin-top: 20px;
         text-decoration: none;
-        color: #333;
+        color: #79b8ff;
       }
 
       .lightbox a:hover {
+        color: #bbb
         text-decoration: underline;
       }
     </style>
   </head>
   <body>
+  <a href="https://theoparashkevov.github.io">
     <div class="lightbox">
       <h2>
-        <a href="https://theoparashkevov.github.io">
-        Go back to Teo Parashkevov's main Blog
-        </a>
+        Go back to Main Blog
         </h2>
     </div>
+    </a>
   </body>
 </html>
-[Teo Parashkevov]()
