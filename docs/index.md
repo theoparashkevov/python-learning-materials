@@ -2,4 +2,4 @@
 
 ---
 
-- [Stack]({% post_url /data_structures/stack/stack.md %})
+- [Stack]({% link /data_structures/stack/stack.md %})
