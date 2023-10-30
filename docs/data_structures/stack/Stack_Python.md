@@ -1,7 +1,6 @@
 ---
 title: stack-post
 permalink: /data-structures/stack
-categories: [data-structures, stack]
 ---
 
 ```python
