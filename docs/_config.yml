@@ -80,7 +80,7 @@ minima:
     - { platform: youtube,        user_url: "https://www.youtube.com/channel/UCe0mtJP7Pl7JmLG8kDQma-g" }
 
 description: >
-  This Project is ... 
+  This Project is a collection of Python learning materials. 
 header_pages:
   - data-structures.md
   - back.md
